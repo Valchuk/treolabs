@@ -70,7 +70,7 @@ input::-ms-input-placeholder {
     border: unset;
     outline: none;
 }
-.login__form input:focus{
+.login__form > input:focus, .login__password input:focus{
     box-shadow: 0 0 12px #00ff14;
 }
 .login__password{
@@ -105,26 +105,26 @@ input::-ms-input-placeholder {
     border: unset;
     margin: auto;
     color: #403e3e;
+    outline: none;
+
 }
 .login__submit-button:hover{
     box-shadow: 0 0 12px #00ff14;
-    outline: none;
 }
 .login__remember{
     position: absolute;
-    left: 321px;
+    left: 320px;
+    width: max-content;
     top: 50%;
     transform: translate(0%, -50%);
     border-bottom: 1px solid transparent;
 }
 .login__remember input{
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-    visibility: hidden;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    vertical-align: middle;
 }
 .login__remember:hover{
-    border-bottom: 1px solid #fff;
     cursor: pointer;
 }

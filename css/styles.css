@@ -122,7 +122,8 @@ input::-ms-input-placeholder {
   outline: none;
 }
 
-.login__form input:focus {
+.login__form > input:focus,
+.login__password input:focus {
   box-shadow: 0 0 12px #00ff14;
 }
 
@@ -165,16 +166,19 @@ input::-ms-input-placeholder {
   border: unset;
   margin: auto;
   color: #403e3e;
+  outline: none;
 }
 
 .login__submit-button:hover {
   box-shadow: 0 0 12px #00ff14;
-  outline: none;
 }
 
 .login__remember {
   position: absolute;
-  left: 321px;
+  left: 320px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   top: 50%;
   -webkit-transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
@@ -183,15 +187,13 @@ input::-ms-input-placeholder {
 }
 
 .login__remember input {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
-  visibility: hidden;
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  vertical-align: middle;
 }
 
 .login__remember:hover {
-  border-bottom: 1px solid #fff;
   cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
