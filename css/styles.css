@@ -1,0 +1,197 @@
+blockquote,
+body,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+img {
+  max-width: 100%;
+}
+
+input::-webkit-input-placeholder {
+  color: #403e3e;
+  opacity: 1;
+}
+
+input::-ms-input-placeholder {
+  color: #403e3e;
+  opacity: 1;
+}
+
+input::placeholder {
+  color: #403e3e;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: #403e3e;
+}
+
+input::-ms-input-placeholder {
+  color: #403e3e;
+}
+
+.button {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  text-align: center;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.login {
+  background-color: #3D667B;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  height: 100vh;
+}
+
+.login a {
+  color: #fff;
+}
+
+.login__logo {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.login__logo img {
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.login__title {
+  background-color: #fff;
+  color: #737373;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.login__form {
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.login__form input {
+  display: block;
+  margin: 15px auto;
+  width: 300px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: unset;
+  outline: none;
+}
+
+.login__form input:focus {
+  box-shadow: 0 0 12px #00ff14;
+}
+
+.login__password {
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+
+.login__remind {
+  position: absolute;
+  left: 320px;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  border-bottom: 1px solid transparent;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.login__remind:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.login__submit__wrapper {
+  width: 300px;
+  margin: auto;
+  position: relative;
+}
+
+.login__submit-button {
+  width: 150px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  display: block;
+  background-color: #fff;
+  border-radius: 10px;
+  border: unset;
+  margin: auto;
+  color: #403e3e;
+}
+
+.login__submit-button:hover {
+  box-shadow: 0 0 12px #00ff14;
+  outline: none;
+}
+
+.login__remember {
+  position: absolute;
+  left: 321px;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  border-bottom: 1px solid transparent;
+}
+
+.login__remember input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.login__remember:hover {
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
