@@ -10,8 +10,118 @@
     <title>Биз игра</title>
   </head>
   <body>
- 
- 
+ <div class="admin-panel">
+  <div class="admin-panel__top-bar">
+    <div class="admin-image">
+      <img src="./img/user.jpg" alt="User">
+    </div>
+    <p class="admin-panel__top-bar-name">
+      Суперадмин
+    </p>
+    <p class="admin-panel__game-name">
+      Биз игра
+    </p>
+  </div>
+  <div class="admin-panel__content">
+    <div class="admin-panel__sidebar">
+      <div class="sidebar__items__wrapper">
+        <div class="sidebar__item">
+          <img src="./img/goal.png" alt="Курсы">
+        </div>
+        <div class="sidebar__item">
+          <img src="./img/team.png" alt="Пользователи">
+        </div>
+        <div class="sidebar__item">
+          <img src="./img/graph.png" alt="Аналитика">
+        </div>
+        <div class="sidebar__item">
+          <img src="./img/achiev.png" alt="Рейтинги">
+        </div>
+      </div>
+      <div class="sidebar__item sidebar__item_exit">
+        <img src="./img/logout.png" alt="Выход">
+      </div>
+    </div>
+    <div class="admin-panel__workspace">
+      <div class="admin-panel__workspace-top">
+        <div class="workspace__search__wrapper">  
+          <label class="workspace__search">
+            <input type="search" placeholder="поиск компании/админа/пользователя">
+            <span class="workspace__search-button">ок</span>
+          </label>
+        </div>
+          <ul class="workspace__add-button">
+            <li>Компанию</li>
+            <li>Админа</li>
+            <li>Пользователя</li>
+          </ul>
+      </div>
+      <div class="workspace-middle">
+        <div class="workspace-middle__card">
+          <p class="card__title">Компании</p>
+          <div class="card__item">
+            <div class="card__item__title">HR</div>
+            <div class="card__item__icons"><img src="./img/team.png" alt=""></div>
+          </div>
+          <div class="card__item">
+            <div class="card__item__title">Служба монтажа</div>
+            <div class="card__item__icons"><img src="./img/team.png" alt=""></div>
+          </div>
+          <div class="card__item">
+            <div class="card__item__title">Бухгалтерия</div>
+            <div class="card__item__icons"><img src="./img/team.png" alt=""></div>
+          </div>
+          <div class="card__item">
+            <div class="card__item__title">Отдел кадров</div>
+            <div class="card__item__icons"><img src="./img/team.png" alt=""></div>
+          </div>
+        </div>
+        <div class="workspace-middle__card">
+          <p class="card__title">Администраторы</p>
+          <div class="card__item">
+            <div class="card__avatar"><img src="./img/user.jpg" alt="Аватар"></div>
+            <ul class="card__info">
+              <li>Фио:</li>
+              <li>Компания:</li>
+              <li>тел:</li>
+              <li>email:</li>
+            </ul>
+          </div>
+          <div class="card__item">
+            <div class="card__avatar"><img src="./img/user.jpg" alt="Аватар"></div>
+            <ul class="card__info">
+              <li>Фио:</li>
+              <li>Компания:</li>
+              <li>тел:</li>
+              <li>email:</li>
+            </ul>
+          </div>
+          <div class="card__item">
+            <div class="card__avatar"><img src="./img/user.jpg" alt="Аватар"></div>
+            <ul class="card__info">
+              <li>Фио:</li>
+              <li>Компания:</li>
+              <li>тел:</li>
+              <li>email:</li>
+            </ul>
+          </div>
+          <div class="card__item">
+            <div class="card__avatar"><img src="./img/user.jpg" alt="Аватар"></div>
+            <ul class="card__info">
+              <li>Фио:</li>
+              <li>Компания:</li>
+              <li>тел:</li>
+              <li>email:</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+<div class="modal modal__company"></div>
+<div class="modal modal__admin"></div>
+<div class="modal modal__user"></div>
   <script src="./js/script.js"></script>
   </body>
 </html>

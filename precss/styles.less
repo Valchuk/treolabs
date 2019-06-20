@@ -128,3 +128,220 @@ input::-ms-input-placeholder {
 .login__remember:hover{
     cursor: pointer;
 }
+.admin-panel{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.admin-image {
+    width: 41px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    display: inline-block;
+}
+
+.admin-image img {
+    border-radius: 50%;
+}
+
+.admin-panel__top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+}
+
+.admin-panel__top-bar-name {
+    display: inline-block;
+    padding: 12px 10px;
+    width: 120px;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.admin-panel__game-name {
+    width: auto;
+    display: inline-block;
+    flex-grow: 1;
+    font-size: 17px;
+    color: #737373;
+    font-weight: bold;
+    text-align: center;
+}
+
+.admin-panel__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 41px;
+    width: 100%;
+}
+
+.admin-panel__sidebar {
+    width: 41px;
+    box-sizing: border-box;
+    display: flex;
+    position: static;
+    flex-wrap: wrap;
+    position: fixed;
+    padding: 0 5px;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+}
+.sidebar__item {
+    cursor: pointer;
+    margin: 30px 0px;
+}
+.sidebar__item_exit {
+    margin: 0px;
+}
+.sidebar__item img {
+    border-radius: 50%;
+}
+
+.admin-panel__workspace {
+    margin-left: 41px;
+    background-color: #ccc;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.admin-panel__workspace-top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.workspace__add-button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.workspace__add-button li {
+    list-style-type: none;
+}
+
+.workspace__search input {
+    width: 320px;
+    border: unset;
+    padding: 5px 10px 5px 25px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 2px;
+    background-color: #f6f6f6;
+}
+
+.workspace__search {
+    display: inline-block;
+    position: relative;
+    right: 120px;
+    transform: translate(-50%);
+}
+.workspace__search::before{
+    content: "";
+    background-image: url('../img/search.png');
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    position: absolute;
+}
+.workspace__search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 10px 5px 5px;
+}
+.workspace__add-button li {
+    padding: 6px 10px 6px 10px;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    position: relative;
+    transition: background-color .5s;
+}
+.workspace__add-button li:hover{
+    background-color: #fff;
+}
+.workspace__add-button li::before{
+    content: "";
+    background-image: url('../img/plus.png');
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.workspace__search__wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.workspace-middle {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.workspace-middle__card {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card__title {
+    text-align: center;
+    font-size: 16px;
+    color: #737373;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.card__item {
+    width: 150px;
+    display: inline-block;
+    padding: 5px;
+    background-color: #eee;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.card__item__title {
+    text-align: center;
+    padding: 15px 5px 10px;
+    box-sizing: border-box;
+}
+.card__item__icons{
+    width: 100px;
+    margin: auto;
+}
+.card__avatar {
+    width: 36px;
+    display: inline-block;
+}
+
+.card__avatar img {
+    border-radius: 50%;
+}
+
+.card__info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card__info li {
+    list-style-type: none;
+}
