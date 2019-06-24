@@ -513,7 +513,7 @@ input::-ms-input-placeholder {
 }
 
 .modal-container {
-  width: 400px;
+  width: 50%;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;
@@ -522,10 +522,44 @@ input::-ms-input-placeholder {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   font-family: Helvetica, Arial, sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.modal-container form {
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .modal-header {
   text-align: center;
+  width: 100%;
+}
+
+.modal__input__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 5px 0;
 }
 
 .modal-header h3 {
@@ -535,14 +569,7 @@ input::-ms-input-placeholder {
 
 .modal-body {
   margin: 20px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  width: 100%;
 }
 
 .modal-default-button {
@@ -589,7 +616,7 @@ input::-ms-input-placeholder {
 }
 
 .modal__input__wrapper label {
-  width: 180px;
+  width: 49%;
   display: inline-block;
   padding: 8px 5px;
   box-sizing: border-box;
@@ -600,6 +627,7 @@ input::-ms-input-placeholder {
   display: inline-block;
   padding: 2px 10px;
   box-sizing: border-box;
+  width: 49%;
 }
 
 .modal-footer {
@@ -610,6 +638,8 @@ input::-ms-input-placeholder {
   flex-wrap: wrap;
   -webkit-justify-content: space-around;
   justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .modal-footer button {
