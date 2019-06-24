@@ -22,7 +22,7 @@
       Биз игра
     </p>
   </div>
-  <div class="admin-panel__content">
+  <div class="admin-panel__content authorized">
     <div class="admin-panel__sidebar">
       <div class="sidebar__items__wrapper">
         <div class="sidebar__item">
@@ -59,26 +59,33 @@
       <div class="workspace-middle">
         <div class="workspace-middle__card">
           <p class="card__title">Компании</p>
-          <div class="card__item">
+          <div class="card__item card__settings">
             <div class="card__item__title">HR</div>
             <div class="card__item__icons"><img src="./img/team.png" alt=""></div>
+            <button class="card__settings-btn"><img src="./img/settings.svg"></button>
           </div>
           <div class="card__item">
             <div class="card__item__title">Служба монтажа</div>
             <div class="card__item__icons"><img src="./img/team.png" alt=""></div>
+            <button class="card__settings-btn"><img src="./img/settings.svg"></button>
+
           </div>
           <div class="card__item">
             <div class="card__item__title">Бухгалтерия</div>
             <div class="card__item__icons"><img src="./img/team.png" alt=""></div>
+            <button class="card__settings-btn"><img src="./img/settings.svg"></button>
+
           </div>
           <div class="card__item">
             <div class="card__item__title">Отдел кадров</div>
             <div class="card__item__icons"><img src="./img/team.png" alt=""></div>
+            <button class="card__settings-btn"><img src="./img/settings.svg"></button>
+
           </div>
         </div>
         <div class="workspace-middle__card">
           <p class="card__title">Администраторы</p>
-          <div class="card__item">
+          <div class="card__item card__settings">
             <div class="card__avatar"><img src="./img/user.jpg" alt="Аватар"></div>
             <ul class="card__info">
               <li>Фио:</li>
@@ -86,6 +93,7 @@
               <li>тел:</li>
               <li>email:</li>
             </ul>
+            <button class="card__settings-btn"><img src="./img/settings.svg"></button>
           </div>
           <div class="card__item">
             <div class="card__avatar"><img src="./img/user.jpg" alt="Аватар"></div>
@@ -95,6 +103,7 @@
               <li>тел:</li>
               <li>email:</li>
             </ul>
+            <button class="card__settings-btn"><img src="./img/settings.svg"></button>
           </div>
           <div class="card__item">
             <div class="card__avatar"><img src="./img/user.jpg" alt="Аватар"></div>
@@ -104,6 +113,7 @@
               <li>тел:</li>
               <li>email:</li>
             </ul>
+            <button class="card__settings-btn"><img src="./img/settings.svg"></button>
           </div>
           <div class="card__item">
             <div class="card__avatar"><img src="./img/user.jpg" alt="Аватар"></div>
@@ -113,15 +123,59 @@
               <li>тел:</li>
               <li>email:</li>
             </ul>
+            <button class="card__settings-btn"><img src="./img/settings.svg"></button>
           </div>
         </div>
       </div>
     </div>
   </div>
  </div>
-<div class="modal modal__company"></div>
-<div class="modal modal__admin"></div>
-<div class="modal modal__user"></div>
+ <div class="modal-mask">
+        <div class="modal-wrapper">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <h3>Создание админа</h3>
+                </div>
+                <div class="modal-body">
+                    <form @submit.prevent="onSubmit">
+                        <div class="modal__input__wrapper">
+                            <label for="company">Наименование компании:</label>
+                            <input v-model="form.company" id="company" type="text">
+                        </div>
+                        <div class="modal__input__wrapper">
+                            <label for="firstName">Фамилия:</label>
+                            <input v-model="form.firstName" id="firstName" type="text">
+                        </div>
+                        <div class="modal__input__wrapper">
+                            <label for="lastName">Имя:</label>
+                            <input v-model="form.lastName" id="lastName" type="text">
+                        </div>
+                        <div class="modal__input__wrapper">
+                            <label for="patronymic">Отчество:</label>
+                            <input v-model="form.patronymic" id="patronymic" type="text">
+                        </div>
+                        <div class="modal__input__wrapper">
+                            <label for="phone">Телефон:</label>
+                            <input v-model="form.phone" id="phone" type="text">
+                        </div>
+                        <div class="modal__input__wrapper">
+                            <label for="email">Email:</label>
+                            <input v-model="form.email" id="email" type="text">
+                        </div>
+                        <div class="modal__input__wrapper">
+                            <label for="password">Пароль:</label>
+                            <input v-model="form.password" id="password" type="password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="modal-default-button" @click="onSubmit">Создать админа</button>
+                    <button type="button" class="modal-default-button" @click="$emit('close')">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
   <script src="./js/script.js"></script>
   </body>
 </html>
