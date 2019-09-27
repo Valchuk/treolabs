@@ -715,6 +715,7 @@ h2 {
   font-weight: 700;
   display: inline-block;
   color: #919191;
+  position: relative;
 }
 
 .navigation__list a:hover {
@@ -890,5 +891,16 @@ h2 {
   width: 100%;
   z-index: 11;
   border-bottom: 1px solid #f0f0f0;
+}
+
+.list_figure li a::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-image: url(../img/list-icon.png);
+    position: absolute;
+    left: -36px;
+    top: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
