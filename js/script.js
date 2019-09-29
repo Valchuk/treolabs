@@ -37,7 +37,7 @@ function basicScrollTop() {
 
   var btnReveal = function btnReveal() {
     if (document.documentElement.scrollTop >= 300) {
-      if (window.matchMedia('(max-width: 768px)').matches) {
+      if (window.matchMedia('(max-width: 992px)').matches) {
         document.querySelector('.header').classList.add('header__top_sticky');
       }
 
@@ -45,7 +45,7 @@ function basicScrollTop() {
     } else {
       scrollBtn.classList.remove('is-visible');
 
-      if (window.matchMedia('(max-width: 768px)').matches) {
+      if (window.matchMedia('(max-width: 992px)').matches) {
         document.querySelector('.header').classList.remove('header__top_sticky');
       }
     }
